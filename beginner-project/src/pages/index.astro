@@ -1,5 +1,6 @@
 ---
-
+const profilePicture =
+  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa157eea2-d51c-11eb-b50d-ece47261907f.jpg?crop=2310%2C1299%2C15%2C156";
 ---
 
 <html lang="en">
@@ -11,6 +12,21 @@
     <title>Astro</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="profile">
+      <img
+        class="profile__picture"
+        src={profilePicture}
+        alt="Joni Mitchell's headshot."
+        width="50%"
+      />
+      <div class="profile__details">
+        <h1>Joni Mitchell</h1>
+        <h2>VP of Engineering at Goooogle</h2>
+        <p>
+          Helping developers be excellent and succeed at building scalable
+          products
+        </p>
+      </div>
+    </div>
   </body>
 </html>
